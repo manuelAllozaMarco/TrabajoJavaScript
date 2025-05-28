@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- Etiquetas meta para el indexeo de la pagina web-->
+<meta charset="UTF-8">
+<meta name="description" content="Pagina de compra de Videojuegos">
+<meta name="robots" content="nofollow">
+<meta name="Author" content="Manuel Alloza Marco">
+<meta name="keywords" content="Videojuegos, criticas y compras">
+<meta name="revisit-after" content="2 days">
+<meta name="category" content="Prácticas">
+<!--Etiqueta meta para que la pagina se adapte en dispositivos pequeños-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Declaración de fichero de estilos -->
+<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+<title>Focus Gaming - Videojuegos</title>
+
+</head>
+
+<body>
+	<!-- Primero Cargo el JQuery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Cargo el fichero externo de JavaScript -->
+	<script src="../js/javaScriptFocusGaming.js"></script>
+
+	<div class="div_container">
+		
+		<header>
+			<!-- html para crear la barra de navegacion de la parte superior-->
+			<nav>		
+				<div class="div_menu">
+					<img src="../img/logo1.png" class="logo-nav" width="20" height="20" alt="Imagen de un mando">	
+					<ul class="menu-nav">
+						<li><a href="../index.html" class="button_nav">Índice</a></li>
+						<li><a href="#" class="button_nav">Videojuegos</a></li>
+						<li><a href="presupuesto.html" class="button_nav">Presupuesto</a></li>
+						<li><a href="contact.html" class="button_nav">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+
+		</header>
+
+		<br>
+		<br>
+
+		<div class="div_fondo_imagen_galery">
+		
+			<section>
+				
+				<!-- html para crear el mosaico de las caratulas con todas las fotos de caratulas de videojuegos-->
+				<div id="div_main_section">
+
+					<!-- div para el titulo del Html -->
+					<div class="div-main-title">VIDEOJUEGOS</div>
+
+					<!--Div para la galeria dinamica -->
+					<div id="galeria-dinamica" class="div-galery-grid"></div>
+
+				</div>
+
+			</section>
+		</div>
+
+	
+
+		<!-- html del pie de página-->
+		<footer>
+  			<div id="div_footer" style="color:#f0f6f6">
+  				<!-- Uso las etiquetas a para convertir los iconos en un enlace para las distintas redes sociales-->
+    			<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      				<img src="../img/instagram.png" class="footer-icon" alt="Icono instagram">
+   				</a>
+    			<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      				<img src="../img/facebook.png" class="footer-icon" alt="Icono facebook">
+    			</a>
+    			<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      				<img src="../img/X.png" class="footer-icon" alt="Icono x">
+    			</a>
+    			----- Focus Gaming ----- C/Leon XIII CP 50008 ----- Todos los derechos reservados 
+  			</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

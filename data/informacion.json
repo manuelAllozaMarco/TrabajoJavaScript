@@ -1,0 +1,62 @@
+[
+  {
+    "top": "1",
+    "titulo": "The Last of US",
+    "genero": "Survival",
+    "desarrolladora": "Naughty Dog"
+  },
+  {
+    "top": "2",
+    "titulo": "GTA San Andreas",
+    "genero": "Accion",
+    "desarrolladora": "Rockstar Games"
+  },
+  {
+    "top": "3",
+    "titulo": "League of Legends",
+    "genero": "MOBA",
+    "desarrolladora": "Riot Games"
+  },
+  {
+    "top": "4",
+    "titulo": "SOMA",
+    "genero": "Terror",
+    "desarrolladora": "Frictional Games"
+  },
+  {
+    "top": "5",
+    "titulo": "Call of Duty Black Ops",
+    "genero": "Shooter",
+    "desarrolladora": "Treyarch"
+  },
+  {
+    "top": "6",
+    "titulo": "Silent Hill 2 Remake",
+    "genero": "Terror",
+    "desarrolladora": "Bloober Team"
+  },
+  {
+    "top": "7",
+    "titulo": "God of War",
+    "genero": "Hack and Slash",
+    "desarrolladora": "Santa Monica Studios"
+  },
+  {
+    "top": "8",
+    "titulo": "Jak 3",
+    "genero": "Plataformas",
+    "desarrolladora": "Naughty Dog"
+  },
+  {
+    "top": "9",
+    "titulo": "Assassins Creed Brotherhood",
+    "genero": "Aventura",
+    "desarrolladora": "Ubisoft"
+  },
+  {
+    "top": "10",
+    "titulo": "Resident Evil 7",
+    "genero": "Survival Horror",
+    "desarrolladora": "Capcom"
+  }
+]

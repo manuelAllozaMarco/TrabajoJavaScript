@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- Etiquetas meta para el indexeo de la pagina web-->
+<meta charset="UTF-8">
+<meta name="description" content="Pagina de compra de Videojuegos">
+<meta name="robots" content="nofollow">
+<meta name="Author" content="Manuel Alloza Marco">
+<meta name="keywords" content="Videojuegos, criticas y compras">
+<meta name="revisit-after" content="2 days">
+<meta name="category" content="Prácticas">
+<!--Etiqueta meta para que la pagina se adapte en dispositivos pequeños-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Declaración de fichero de estilos -->
+<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+<title>Focus Gaming - Contacto</title>
+
+</head>
+
+<body>
+	<!-- Primero Cargo el JQuery-->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Cargo el fichero externo de JavaScript -->
+	<script src="../js/javaScriptFocusGaming.js"></script>
+
+	<div class="div_container">
+	
+		<header>
+			
+			<!-- html para crear la barra de navegacion de la parte superior de la pagina web-->
+			<nav>		
+				<div class="div_menu">
+					<img src="../img/logo1.png" class="logo-nav" width="20" height="20" alt="Imagen de un mando">	
+					<ul class="menu-nav">
+						<li><a href="../index.html" class="button_nav">Índice</a></li>
+						<li><a href="galeria.html" class="button_nav">Videojuegos</a></li>
+						<li><a href="#" class="button_nav_in">Presupuesto</a></li>
+						<li><a href="contact.html" class="button_nav">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+
+		</header>
+
+		<div id="div_presupuesto" class="div_fondo_imagen_presupuesto">
+
+			<section>
+				<!-- html para crear el formulario de contacto-->
+				<div id="div_form">
+
+					<form method="post" id="Formulario" name="Formulario" class="form-grid">
+
+						<div class="div-main-title">FORMULARIO</div>
+
+						<div class="div-formulario-dividido">
+							
+						</div>
+
+						<br>
+						
+						<h3>RELLENA LOS SIGUIENTES CAMPOS:</h3>
+
+						<!--Vamos a realizar un div para cada fila del formulario-->
+						<!--Posteriormente vamos a meter todos los divs en un Grid para que sea responsive-->
+						<!--Cada div se comforma de dos partes una label para saber el campo que vamos a rellenar y un input para introducir la informacion-->
+						<div class="form-row">
+							<label for="NOMBRE">* Nombre:</label>
+							<input id="NOMBRE" name="NOMBRE" class="textbox" type="text" maxlength="15" placeholder="Tu nombre">
+						</div>
+
+						<div class="form-row">
+							<label for="APELLIDO">* Apellido:</label>
+							<input id="APELLIDO" name="APELLIDO" class="textbox" type="text" maxlength="40" placeholder="Tu apellido">
+						</div>
+						<!--Añado el pattern para verificar que los datos introducidos sean 9 digitos-->
+						<div class="form-row">
+   	 						<label for="TELEFONO">* Teléfono:</label>
+    						<input id="TELEFONO" name="TELEFONO" class="textbox" type="tel" maxlength="9" placeholder="Móvil o Fijo">
+  						</div>
+
+  						<div class="form-row">
+						    <label for="E-MAIL">* E-mail:</label>
+						    <input id="E-MAIL" name="E-MAIL" class="textbox" type="email" maxlength="50" placeholder="tu@email.com">
+						</div>
+
+						<div class="form-row">
+						    <label for="INFO">* Información:</label>
+						    <textarea id="INFO" name="INFO" placeholder="¿Qué información deseas saber?"></textarea>
+						</div>
+
+						<!-- Campos del nuevo formulario -->
+
+						<!-- Selector de Productos para elejir por el cliente-->
+						<div class="form-row">
+							<label for="selectProducto">*Elije un producto:</label>
+							<!--Hacemos un select para que pueda seleccionar entre una lista de productos--> 
+							<select id="selectProducto">
+								<option value="0">Seleccione un producto</option>
+								<option value="1">The last of us</option>
+								<option value="2">God of war</option>
+								<option value="3">Jack and Daxter</option>
+								<option value="4">Resident evill 7</option>	
+							</select>
+						</div>
+
+						<!-- Selector de que tipo de plazo de entrega se va a escoger -->
+						<div class="form-row">
+							<label for ="selectOption">*Entrega Dias/Meses:</label>
+							<select id="selectOption">
+								<option value="0">Selecione una opcion</option>
+								<option value="1">Dias</option>
+								<option value="2">Meses</option>
+							</select>
+						</div>
+
+						<div class="form-row">
+							<label for ="plazo">Cantidad:</label>
+							<input id="plazo" name="plazo" type="number" placeholder="Introdudca cantidad">
+						</div>
+
+						<div class="form-row">
+							<label for="cbDLC">Elija los extras:</label>
+							<div class="checkbox-row">
+								<input type="checkbox" name="cbDLC" id="cbDLC">DLC
+								<input type="checkbox" name="cbColeccionista" id="cbColeccionista">Coleccionista
+							</div>
+						</div>
+
+						<div class="form-row">
+							<label for="txtPresupuesto">Presupuesto Final:</label>
+							<input type="number" id="txtPresupuesto" name="txtPresupuesto" value="0" disabled>
+						</div>
+
+						<div class="form-row checkbox-row">
+							<input type="checkbox" id="cbCondiciones" name="cbCondiciones" onclick="condicionesVerificadas()">
+						    <label for="cbCondiciones">He leído las condiciones y permisos *</label>
+						</div>
+
+						<p class="form-note">(*) Los campos marcados con asterisco son obligatorios.</p>
+
+						<div class="botones">
+							<input id="submitFomulario" type="submit" name="submitFormulario" class="boton gris" value="ENVIAR" onclick="">
+							<input id="resetFormulario" type="reset" name="resetFormulario" class="boton gris" value="BORRAR">
+						</div>
+					</form>
+
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<!-- html del pie de página-->
+	<footer>
+  		<div id="div_footer" style="color:#f0f6f6">
+  			<!-- Uso las etiquetas a para convertir los iconos en un enlace para las distintas redes sociales-->
+    		<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      			<img src="../img/instagram.png" class="footer-icon" alt="Icono instagram">
+   			</a>
+    		<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      			<img src="../img/facebook.png" class="footer-icon" alt="Icono facebook">
+    		</a>
+    		<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+      			<img src="../img/X.png" class="footer-icon" alt="Icono x">
+    		</a>
+    		----- Focus Gaming ----- C/Leon XIII CP 50008 ----- Todos los derechos reservados 
+  		</div>
+	</footer>
+</body>
+
+</html>

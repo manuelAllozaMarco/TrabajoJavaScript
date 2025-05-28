@@ -1,0 +1,511 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+/* Inicio del Documento CSS */
+
+/* Importación de Google Font "Open Sans" */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+/*Estilos para Etiquitas globales del html*/
+
+html, body {
+	margin:0;
+	padding:0px;
+	font-size:13px;
+	color:#3c3c3c;
+	font-family: Helvetica, sans-serif;
+	/*background:url(../img/fondo.jpg) no-repeat fixed center top;*/
+	background-size:100% auto;
+	line-height:18px;
+	flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+}
+label{
+	font-size: 15px;
+}
+
+header{
+	z-index: 5;
+}
+
+/* Modificación de comportamiento de los enlaces */
+a,a:visited{
+	text-decoration: none;
+}
+
+a{
+	color:#020202;
+}
+
+
+/* Modificación del comportamiento del encabezado 1 */
+h1 {
+	font-size: 35px;
+}
+
+/* Modificación del comportamiento de encabezados */
+h1,h2,h4 {
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Modificación del comportamiento de los párrafos */
+p {
+	text-align: justify;
+	color: #020202;
+	font-weight: bold;
+}
+
+form{
+	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 50px;
+	z-index: 1;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+footer{
+	flex: 1;
+	bottom: 0;
+	width: 100%;
+	background-color: #020202;
+	color: #f0f6f6;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/*Estilos para las tablas*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+	margin-top: 30px;
+}
+
+thead {
+    background-color: #020202;
+	color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #cce5ff;
+}
+
+
+/*Estilos para los distintos DIVs de la pagina*/
+
+/* IDs */
+#div_main_section{
+	height: 100%;
+	border: 1px solid black;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	background-color:#f49d37;
+}
+
+/*Página principal*/
+#div_header{
+	clear:both;
+	box-sizing:border-box;
+	border:solid;
+	border-width:10px;
+	border-color:transparent;
+	background-color:#020202;
+	
+}
+
+#div_header img{
+	width:100%;
+	border: 1px solid black;
+}
+
+/*Estilos de imágenes alargadas artículos*/
+#img_long {
+	width: 600px;
+	height: 200px;
+	margin-left:100px;
+}
+
+#imagen-malenia{
+	max-width: 500px;
+	max-height: 1000px;
+	height: 100%;
+	width: 100%;
+}
+
+#img-main{
+	width: 100%;
+	height: 100%;
+}
+
+/*Estilos para la galeria dinamica*/
+#galeria-dinamica{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+/*Estilos para el div del formulario*/
+#div_form{
+	width: 100%;
+	background-color: #f49d37;
+	border: 1px solid black;
+	margin-top: 70px;
+	padding: 30px;
+	height: 100%;
+
+}
+
+/*Pagina de contacto*/
+#div_contacto{ 
+	border: 1px solid black;
+	margin-top: 70px;
+	padding: 30px;
+}
+
+/*Mapa de la pagina del contacto*/
+#mapa {
+	vertical-align: center;
+	width: 100%;
+	height:600px;
+}
+
+/*Estilo del iframe dentro del la clase mapa*/
+#mapa iframe{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/*Div del pie de página*/
+#div_footer {
+	border: 1px solid black; 
+	color:#f0f6f6;
+	font-size:12px;
+	position:relative;
+	box-sizing:border-box;
+	clear:both;
+	text-align:center;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+/*Clases*/
+
+/*Div que contiene la página*/
+.div_container{
+	position:relative;
+	clear:both;
+	display:inline;
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*Estilos para el div que contiene los titulos de cada html*/
+.div-main-title{
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #020202;
+	font-size: 3rem;
+}
+/*Estilos para titulos mas pequeños*/
+.div-middle-title{
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #020202;
+	font-size: 2rem;
+}
+
+.div-texto-imagen{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+/*Estilo para la imagen principal del Index.html*/
+.div-main-img{
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+/*Estilo para las noticias en el Index.html*/
+.div-news{
+	margin-top: 50px;
+}
+
+/*Estilos para la galeria de videojuegos que hay en la pagina web*/
+/*Voy a crear un Grid para contener los elementos de la galeria*/
+.div-galery-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+/*Voy a crear una clase para definir cada elemento que contendra el Grid*/
+.galery-item{
+	width: 200px;
+	height: 250px;
+	object-fit: cover;
+	border: 1px solid black;
+}
+
+.galery-item:hover{
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 4);
+}
+
+/*Estilos para el formulario dividido*/
+.div-formulario-dividido{
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 	flex-wrap: wrap;
+ 	margin-top: 50px;
+ 	justify-items: center;
+ 	align-items: center;
+}
+
+
+
+/*Estilos para la galeria de videojuegos que hay en la pagina web*/
+/*Voy a crear un Grid para contener los elementos de la galeria*/
+.div-galery-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+/*Voy a crear una clase para definir cada elemento que contendra el Grid*/
+.galery-item{
+	width: 200px;
+	height: 250px;
+	object-fit: cover;
+	border: 1px solid black;
+}
+
+.galery-item:hover{
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 4);
+}
+
+/* Div del menú de la página */
+.div_menu {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	height: 45px;
+	width: 100%;
+	padding: 30px;
+	position:fixed;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	background-color: black;
+	/*Para que el menu se adapate a distintas pantallas*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*Estilos para el nav*/
+.menu-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+/* css para los fondo de imagenes de las distintas vistas */
+.div_fondo_imagen_index{
+	background-image: url("../img/daysGoneFondo.jpg");
+}
+
+.div_fondo_imagen_galery{
+	background-image: url("../img/fondoJuego.jpg");
+}
+
+.div_fondo_imagen_presupuesto{
+	background-image: url("../img/zombies1.jpg");
+}
+
+.div_fondo_imagen_contact{
+	background-image: url("../img/theLastOfUsFondo.jpg");
+}
+
+.textbox{
+	border-radius: 1px 1px 1px 1px;
+	-moz-border-radius: 1px 1px 1px 1px;
+	-webkit-border-radius: 1px 1px 1px 1px;
+	border: 1px solid #c0c5ce;
+	height: 28px;
+	color: black;
+}
+
+/*Estilos para la Barra de Navegacion*/
+
+/* Estilos comunes de los botones de navegación */
+.button_nav,.button_nav:hover,.button_nav_in,.button_nav_in:hover {
+	text-decoration-color: #f49d37;
+	text-decoration: none;
+	display:inline-block;
+	width: 90px;
+	padding: 5px 30px ;
+	white-space: nowrap;
+	margin: 2px 5px 10px;
+	border: 3px solid black;
+	border-radius: 2px;
+}
+
+/* Estilos independientes de los botones de navegación */
+.button_nav{
+	background: linear-gradient(to bottom, #ffffff 0%,#f49d37 44%,#f49d37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+
+.button_nav:hover{
+	background: #f49d37;
+	font-size: 14px;
+}
+
+.button_nav_in {
+	border-color:yellow ;
+	background: linear-gradient(to bottom, #ffffff 0%,#f49d37 44%,#f49d37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6*/
+}
+
+.button_nav_in:hover{
+	background: #f49d37;
+	font-size: 14px;
+}
+
+/*Estilo para el Logotipo de la barra de navegacion*/
+.logo-nav{
+	margin-right: 20px;
+	height: 45px; 
+	width: 70px;
+}
+
+/*Estilos para los Iconos del footer*/
+.footer-icon{
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+/*Esilos para el formulario de presupuesto*/
+
+.form-grid {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grid h1,
+.form-grid h3 {
+  text-align: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 12px 20px;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  justify-self: end;
+  font-weight: bold;
+}
+
+.textbox, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Checkbox row diferente, sin grid columns */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  margin-left: 200px;
+  justify-content: flex-start;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.boton.gris {
+  background-color: #888;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton.gris:hover {
+  background-color: #555;
+}

@@ -45,9 +45,12 @@ h1 {
 
 /* Modificación del comportamiento de encabezados */
 h1,h2,h4 {
-	
 	font-family: 'Open Sans', sans-serif;
-}
+	text-align: center;
+	color: #020202;
+	font-weight: bold;
+	font-size: 2rem;
+	}
 
 /* Modificación del comportamiento de los párrafos */
 p {
@@ -246,6 +249,10 @@ tbody tr:hover {
 	font-size: 2rem;
 }
 
+.div-inicial{
+	margin-top: 70px;
+}
+
 .div-texto-imagen{
 	display: flex;
 	align-items: center;
@@ -375,6 +382,11 @@ tbody tr:hover {
 
 .div_fondo_imagen_contact{
 	background-image: url("../img/theLastOfUsFondo.jpg");
+}
+
+/*Estilo para el div de contact*/
+.div-contact{
+	background-color: black;
 }
 
 .textbox{

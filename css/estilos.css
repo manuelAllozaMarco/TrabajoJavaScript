@@ -90,6 +90,10 @@ footer{
 	padding: 20px 0;
 }
 
+nav{
+	z-index:1000;
+}
+
 /*Estilos para las tablas*/
 
 table {
@@ -190,18 +194,21 @@ tbody tr:hover {
 	padding: 30px;
 }
 
-/*Mapa de la pagina del contacto*/
 #mapa {
-	vertical-align: center;
-	width: 100%;
-	height:600px;
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+	z-index: 1;
+	position: relative;
 }
 
-/*Estilo del iframe dentro del la clase mapa*/
-#mapa iframe{
-	width: 100%;
-	height: 100%;
-	border: 0;
+/* Ajustamos el padding de las secciones de contacto para que el mapa sea visible bien */
+#seccion-mapa, #seccion-contacto {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*Div del pie de página*/
@@ -350,6 +357,8 @@ tbody tr:hover {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	/*Para que el mapa no este por delante*/
+	z-index: 1000;
 }
 
 /*Estilos para el nav*/

@@ -22,6 +22,11 @@
 </head>
 
 <body>
+	<!--Declaro el archivo js que vamos a emplear-->
+	<script src="../js/MapaDinamico.js"></script>
+	<!-- Cargamos la API de Google Maps -->
+	 <!--Usando nuestra Key que hemos creado-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD141qpPYjC7rggjq98jkoXGhzBWMxxac0&callback=initMap"></script>
 
 	<div class="div_container">
 	
@@ -49,23 +54,21 @@
 				<!-- html para crear los datos de contacto de la pagina web-->
 				<div id="div_main_section">
 					<br>
-					<h2>CONTACTO</h2>
-					
-					<div class="row">
-						<div class="col-4">
-					 		<p>Correo electronico: FocusGaming@gmail.com</p>
-					 		<p>Numero de telefono: 685 595 495</p>
-					 		<p>Twitter: @FocusGaming</p>
-						</div>
-						<div class="col-8"> 
-					 		<div id="mapa"> 
-					 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.470175854378!2d-0.8852928233199933!3d41.64558237993918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914e66f0f8abd%3A0xb7151219999d326b!2sC.%20de%20Le%C3%B3n%20XIII%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1705078306782!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					 		</div>
-					 	</div>
+					<h1>Contacto</h1>
+
+					<div id="mapa"></div>
+
+					<h2>Datos de contacto</h2>
+					<p>Nombre del negocio: GGAMERS</p>
+					<p>Dirección: C. de Leon XIII</p>
+					<p>Teléfono: +34 123 456 789</p>
+					<p>Email: ggamers@gamil.com</p>
+
 					</div> 
-				</div>
-			</section>
+				</section>
 		</div>
+			
+	</div>
 				
 		<!-- html del pie de página-->
 		<!-- -->
@@ -84,8 +87,7 @@
     			----- Focus Gaming ----- C/Leon XIII CP 50008 ----- Todos los derechos reservados 
   			</div>
 		</footer>
-	
-	</div>
+
 
 </body>
 
